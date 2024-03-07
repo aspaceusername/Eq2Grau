@@ -4,5 +4,31 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
+    <h2> 2nd Grade Equation </h2>
+    <h4> Projeto para determinar as raízes da equação de segundo grau</h4>
+    <!--hi im on the browser-->
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div>
+    <br/>
+    <h2>Input the equation's parameters</h2>
+    <form>
+        @*
+            só no visual studio é lido este comment, não no browser
+            - <form> envia a data <input> para o servidor
+            - 'id' é lido no brwoser
+            - 'name' é lido no servidor
+        *@
+        <div>
+            <!-- name é usado pelo server(o que nós queremos), id é usado pelo client (javascript)-->
+            A:<input type="text" placeholder="value of A" id="A" name="A" /><br />
+            B:<input type="text" placeholder="value of B" id="B" name="B"/><br />
+            C:<input type="text" placeholder="value of C" id="C" name="C"/><br />
+            <input type="submit" value="Calcular"/>
+        </div>
+    </form>
+    Solution<br/><textarea></textarea>
+    <!--
+      (-b +- sqrt(b^2-4ac) ) / 2a
+     -->
 </div>
